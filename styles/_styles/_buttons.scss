@@ -1,0 +1,137 @@
+@import "./colores","./fonts";
+
+button{
+    border: none;
+    border-radius: 5px;
+    font-family: $font1;
+    cursor: pointer;
+}
+
+.normal{
+    height: 44px;
+    width: 150px;
+}
+.w-small{
+    height: 44px;
+    width: 120px;
+}
+
+.transparent{
+    background-color: transparent;
+    color: $white;
+    border: 1px solid $white;
+    font-size: $btn-normal;
+}
+.transparent:hover{
+    background-color: $primary;
+    color: $white;
+    border: none;
+    font-size: $btn-normal;
+}
+.bg-green{
+    background-color: $green;
+    color: $black;
+    font-size: $btn-normal;
+    transition: ease all 0.3s;
+}
+.bg-primary{
+    background-color: rgba($color: $primary, $alpha: 0.7);
+    color: $white;
+    font-size: $btn-normal;
+    transition: ease all 0.3s;
+    width: 150px;
+}
+.bg-green:hover{
+    background-color: rgb(86, 255, 129);
+    color: black;
+    font-size: $btn-normal;
+}
+
+
+
+.programming{
+    height: 15px;
+    font-family: $font2;
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+.js{
+    background-color: #ffee00;
+    width: 90px;
+}
+.react{
+    width: 45px;
+    background-color: #00ccff;
+}
+.negocios{
+    height: 15px;
+    font-family: $font2;
+    font-weight: 700;
+    font-size: 0.7rem;
+    background-color:  $complement;
+    width: 90px;
+}
+.startups{
+    height: 15px;
+    font-family: $font2;
+    font-weight: 700;
+    font-size: 0.7rem;
+    background-color:  $red;
+    width: 80px;
+    color: $white;
+}
+
+
+
+/*TOGLE*/
+
+.burger{
+    border: none;
+    .toggle{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .line{
+            width: 35px;
+            height: 4px;
+            background-color: $white;
+            border: none;
+            border-radius: 25px;
+        }
+    }
+}
+
+#closeMenu{
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    box-shadow: 0px 0px 0px 1px rgba($color: $complement, $alpha: 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 20px 0 0;
+    font-size: 1rem;
+
+    i{
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        color: $white;
+        height: 20px;
+        width: 20px;
+        display: block;
+        border-radius: 100%;
+       
+        font-weight: 800;
+    }
+}
+
+
+
+/*TOGLE*/
+
+

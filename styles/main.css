@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+button {
+  border: none;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+}
+
+.normal {
+  height: 44px;
+  width: 150px;
+}
+
+.w-small {
+  height: 44px;
+  width: 120px;
+}
+
+.transparent {
+  background-color: transparent;
+  color: #f1f4f8;
+  border: 1px solid #f1f4f8;
+  font-size: 1rem;
+}
+
+.transparent:hover {
+  background-color: #021d58;
+  color: #f1f4f8;
+  border: none;
+  font-size: 1rem;
+}
+
+.bg-green {
+  background-color: #2be9aa;
+  color: #131313;
+  font-size: 1rem;
+  transition: ease all 0.3s;
+}
+
+.bg-primary {
+  background-color: rgba(2, 29, 88, 0.7);
+  color: #f1f4f8;
+  font-size: 1rem;
+  transition: ease all 0.3s;
+  width: 150px;
+}
+
+.bg-green:hover {
+  background-color: rgb(86, 255, 129);
+  color: black;
+  font-size: 1rem;
+}
+
+.programming {
+  height: 15px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.js {
+  background-color: #ffee00;
+  width: 90px;
+}
+
+.react {
+  width: 45px;
+  background-color: #00ccff;
+}
+
+.negocios {
+  height: 15px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  background-color: #8cc2ff;
+  width: 90px;
+}
+
+.startups {
+  height: 15px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  background-color: #ca3a3a;
+  width: 80px;
+  color: #f1f4f8;
+}
+
+/*TOGLE*/
+.burger {
+  border: none;
+}
+.burger .toggle {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.burger .toggle .line {
+  width: 35px;
+  height: 4px;
+  background-color: #f1f4f8;
+  border: none;
+  border-radius: 25px;
+}
+
+#closeMenu {
+  margin-top: 50px;
+  width: 150px;
+  height: 40px;
+  box-shadow: 0px 0px 0px 1px rgba(140, 194, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 20px 0 0;
+  font-size: 1rem;
+}
+#closeMenu i {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #f1f4f8;
+  height: 20px;
+  width: 20px;
+  display: block;
+  border-radius: 100%;
+  font-weight: 800;
+}
+
+/*TOGLE*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h3 {
+  font-size: 1.2 0.9rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h4 {
+  font-size: 0.9rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h5 {
+  font-size: 0.8rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-bg {
+    position: relative;
+  }
+  .home-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/static/img/bg/4.jpg);
+    background-size: cover;
+    filter: brightness(0.1);
+    z-index: -2;
+  }
+  .home-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(170deg, rgba(2, 29, 88, 0.5), rgba(2, 29, 88, 0.7), rgba(2, 29, 88, 0.2));
+    background-blend-mode: multiply;
+    opacity: 0.9;
+    z-index: -1;
+  }
+  /* Resto de estilos */
+  .header {
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 0 20px;
+  }
+  .header .brand img {
+    width: 100px;
+  }
+  .header .nav .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    width: 85%;
+    height: 100%;
+    transition-duration: 0.3s;
+  }
+  .header .nav .menu li {
+    list-style: none;
+    height: 50px;
+    transition-duration: 0.3s;
+  }
+  .header .nav .menu li a {
+    color: #f1f4f8;
+    text-decoration: none;
+    font-family: "Red Hat Text", sans-serif;
+    transition-duration: 0.3s;
+    letter-spacing: 0.0625rem;
+  }
+  .header .nav .menu.active {
+    transition-duration: 0.3s;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(19, 19, 19, 0.99);
+    position: absolute;
+    z-index: 99;
+  }
+  .header .nav #closeMenu.menu.active {
+    transition-duration: 0.3s;
+    display: none;
+  }
+  .header .nav #servicios.menu.active {
+    transition-duration: 0.3s;
+    display: none;
+  }
+  .inicio {
+    border-top: 0.1px solid rgba(241, 244, 248, 0.2);
+    width: 100%;
+    height: 76.1vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inicio .textos {
+    padding: 0 30px;
+    color: #f1f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .inicio .textos title {
+    font-size: 0.9rem;
+  }
+  .inicio .textos title h5 {
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.125rem;
+  }
+  .inicio .textos .spech h2 {
+    text-align: center;
+    letter-spacing: 0.0425em;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+  .inicio .butns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .inicio .butns i {
+    font-size: 0.8rem;
+    margin-right: 5px;
+  }
+  /*SILDER TEXT*/
+  /*SILDER TEXT*/
+  #slider-texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(19, 19, 19, 0.5);
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 16vh;
+  }
+  #t-slider {
+    display: inline-block;
+    white-space: nowrap;
+    animation: typing 20s infinite linear;
+    font-size: 1.2rem;
+    font-family: "Nunito Sans", sans-serif;
+    color: #2be9aa;
+  }
+  @keyframes typing {
+    0% {
+      transform: translateX(-400%);
+    }
+    10% {
+      transform: translateX(-320%);
+    }
+    20% {
+      transform: translateX(-240%);
+    }
+    30% {
+      transform: translateX(-160%);
+    }
+    40% {
+      transform: translateX(-80%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    60% {
+      transform: translateX(80%);
+    }
+    70% {
+      transform: translateX(160%);
+    }
+    80% {
+      transform: translateX(240%);
+    }
+    90% {
+      transform: translateX(320%);
+    }
+    100% {
+      transform: translateX(400%);
+    }
+  }
+  /*SILDER TEXT*/
+  /*SILDER TEXT*/
+  .svg-wave {
+    margin-top: -120px;
+  }
+  .svg-wave-invertido {
+    margin-top: -150px;
+  }
+  .quienes-somos {
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 150px;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .quienes-somos h1 {
+    text-align: start;
+    width: 85%;
+    margin: auto;
+    font-size: 2rem;
+    margin-top: -30px;
+    line-height: 2rem;
+    letter-spacing: -2px;
+    color: #021d58;
+  }
+  .quienes-somos h1 span {
+    font-size: 3rem;
+  }
+  .quienes-somos .cards {
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    transition: transform ease 0.5s;
+    scroll-behavior: smooth;
+    margin-bottom: -30px;
+  }
+  .quienes-somos .cards .card {
+    flex: 0 0 auto;
+    height: 400px;
+    width: 80%;
+    scroll-snap-align: center;
+    overflow: hidden;
+    margin: auto;
+    margin-left: 3%;
+    margin-right: 8%;
+    display: flex;
+    align-items: flex-end;
+    transition: transform ease 0.5s;
+    box-shadow: 5px -2px 5px 1px rgba(19, 19, 19, 0.1);
+  }
+  .quienes-somos .cards .card #itemUno {
+    transition: height 0.5s ease-in;
+  }
+  .quienes-somos .cards .card #itemDos {
+    transition: height 0.5s ease-out;
+  }
+  .quienes-somos .cards .card #itemTres {
+    transition: height 0.5s ease-out;
+  }
+  .quienes-somos .cards .card .item {
+    transition: transform ease 0.5s;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    border-top-left-radius: 80px;
+    background-color: white;
+  }
+  .quienes-somos .cards .card .item .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    color: #021d58;
+  }
+  .quienes-somos .cards .card .item .title h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -100px;
+  }
+  .quienes-somos .cards .card .item .title p {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    font-size: 1rem;
+  }
+  .quienes-somos .cards .card .item .title p button {
+    background-color: transparent;
+    color: #2be9aa;
+  }
+  .quienes-somos .cards .card .item.active {
+    height: 90%;
+  }
+  .quienes-somos .cards .contenedor-mision {
+    background-image: url(/static/img/bg/5.jpg);
+    border: none;
+    border-radius: 30px;
+    background-size: cover;
+  }
+  .quienes-somos .cards .contenedor-vision {
+    background-image: url(/static/img/bg/2.jpg);
+    border: none;
+    border-radius: 30px;
+    background-size: cover;
+  }
+  .quienes-somos .cards .contenedor-nosotros {
+    background-image: url(/static/img/bg/1.jpg);
+    border: none;
+    border-radius: 30px;
+    background-size: cover;
+  }
+  /*SERVICIOS*/
+  #servicios {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    background-color: #8cc2ff;
+    margin-top: -105px;
+  }
+  #servicios h3 {
+    color: #f1f4f8;
+    font-size: 1.2 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 0;
+  }
+  #servicios .items-servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: inherit;
+    height: inherit;
+    padding-bottom: 100px;
+  }
+  #servicios .items-servicios .inversiones {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #55a3fc;
+    border-radius: 50px;
+    padding: 15px 10px;
+    box-shadow: 0px -3px 0px 0px rgba(140, 194, 255, 0.3), 3px 10px 0px 0px rgba(241, 244, 248, 0.2);
+  }
+  #servicios .items-servicios .inversiones .icono {
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+    background-color: #ffffff;
+  }
+  #servicios .items-servicios .inversiones .icono img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+  #servicios .items-servicios .inversiones .tittle {
+    display: flex;
+    flex-direction: column;
+    color: #f1f4f8;
+    font-size: 1.2 0.9rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  #servicios .items-servicios .inversiones .tittle h3 {
+    display: block;
+    padding: 0;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  #servicios .items-servicios .inversiones .tittle p {
+    display: block;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  /*SERVICIOS*/
+  footer {
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #131313;
+    padding: 30px 40px 0 40px;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  footer a {
+    text-decoration: none;
+  }
+  footer .items-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  footer .items-footer .brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+    height: auto;
+  }
+  footer .items-footer .brand img {
+    width: 50px;
+  }
+  footer .items-footer .brand .rr-ss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+    width: auto;
+  }
+  footer .items-footer .brand .rr-ss i {
+    font-size: 1.8rem;
+    color: #8cc2ff;
+  }
+  footer .items-footer .datos-fiscales {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6em;
+  }
+  footer .items-footer .datos-fiscales .nombre {
+    margin-top: 30px;
+    color: #f1f4f8;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  footer .items-footer .datos-fiscales .datos {
+    margin-top: -20px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    margin-bottom: 50px;
+  }
+  footer .items-footer .datos-fiscales .datos a {
+    text-align: center;
+    display: block;
+    color: #f1f4f8;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+  }
+}/*# sourceMappingURL=main.css.map */
