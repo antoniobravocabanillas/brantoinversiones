@@ -17,7 +17,7 @@
 
     <section class="home-bg">
 
-        <section class="header">
+        <section id="header" class="header">
             <div class="brand">
                 <a href="">
                     <img src="/static/img/brand/binv.png" alt="">
@@ -26,11 +26,11 @@
             </div>
             <div class="nav">
                 <ul id="menu" class="menu">
-                    <li><a href="">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="">Aliados</a></li>
-                    <li><a href="">Inversiones</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#aliados">Aliados</a></li>
+                    <li><a href="#inversiones">Inversiones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
 
                     <button class="bg-primary" id="closeMenu">
                         <i class="fa-solid fa-circle-xmark"></i>
@@ -222,12 +222,26 @@ quienes somos? -->
                 </div>
                 <div class="tittle">
                     <h3>Inversiones</h3>
-                    <p>Gracias a nuestras alianzas estratégicas, te brindamos un amplio abanico de oportunidades de
+                    <p>Acceso a un amplio abanico de oportunidades de
                         inversión, con cientos de opciones disponibles para que encuentres la que mejor se ajuste a tus
                         objetivos financieros.</p>
                 </div>
 
             </div>
+
+            <!-- Item -->
+            <!-- Item -->
+            <div class="planificacion">
+                <div class="icono">
+                    <img src="/static/img/servicios/empresa.png" alt="">
+                </div>
+                <div class="tittle">
+                    <h3>Financiamiento de empresas</h3>
+                    <p>Acceda a los mejores instrumentos y soluciones de financiación. Fácil y rápido! </p>
+                </div>
+            </div>
+            <!-- Item -->
+            <!-- Item -->
 
             <!-- Item -->
             <!-- Item -->
@@ -252,7 +266,7 @@ quienes somos? -->
                     <img src="/static/img/servicios/jubilacion.png" alt="">
                 </div>
                 <div class="tittle">
-                    <h3>Planificación Financiera</h3>
+                    <h3>Jubilacion</h3>
                     <p>Evaluación de las necesidades financieras para la jubilación, desarrollo de estrategias de ahorro
                         e inversión a largo plazo y asesoramiento en la elección de planes de pensiones y otros
                         instrumentos de ahorro para la jubilación.</p>
@@ -345,8 +359,8 @@ quienes somos? -->
                         <p>Como inversionista, es importante conocer tu perfil para tomar decisiones financieras acordes
                             a tus objetivos y preferencias.</p>
                         <button class="normal-movil bg-primary-movil">
-                            <i class="fa-solid fa-download"></i>
-                            Descargar
+                            <i class="fa-solid fa-clipboard-list"></i>
+                            Hacer test
                         </button>
                     </div>
                 </div>
@@ -376,11 +390,53 @@ quienes somos? -->
                             experiencia en los mercados financieros.</p>
 
                         <button class="normal-movil bg-primary-movil">
-                            <i class="fa-solid fa-download"></i>
-                            Descargar
+                            <i class="fa-solid fa-eye"></i>
+                            Portfolio
                         </button>
                     </div>
                 </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- practicidad -->
+    <!-- practicidad -->
+
+
+    <!-- inversiones -->
+    <!-- inversiones -->
+    <section id="inversiones" class="inversiones">
+
+
+        <i class="fa-solid fa-chart-pie"></i>
+
+        <h1>
+            Diversificá tus inversiones
+        </h1>
+        <div class="container">
+
+            <div id="cap-market" class="item">
+                <button>
+                    Mercado de capitales
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+            <div id="real-state" class="item">
+                <button>Negocios Inmobiliarios
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+
+            </div>
+            <div id="financiamiento" class="item">
+                <button>Financiamiento
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+            <div id="criptos" class="item">
+                <button>Criptoactivos
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
             </div>
 
 
@@ -397,15 +453,50 @@ quienes somos? -->
 
 
 
+
+
+
+
+
         </div>
-
     </section>
-    <!-- practicidad -->
-    <!-- practicidad -->
+    <!-- inversiones -->
+    <!-- inversiones -->
 
 
+    <!-- Contacto -->
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="info-contacto-form">
+            <h2>Contactanos</h2>
+            <h4>Telefono</h4>
+            <p>1121148340</p>
+            <h4>Email</h4>
+            <p>contacto@brantoinversiones.com.ar</p>
+        </div>
+        <form action="">
+            
+            <input type="text" placeholder="Nombre">
+            
+            <input type="text" placeholder="Apellido">
+            
+            <input type="tel" placeholder="Celular">
+            <input type="email" placeholder="Email">
+        
+            <select name="form-option" id="form-option">
+                <option value="">Soy cliente</option>
+                <option value="">No soy cliente</option>
+                <option value="">Otros</option>
+            </select>
 
+            <textarea name="" id="mensaje" cols="30" rows="10">
+            </textarea>
+            <button class="normal" type="submit">Enviar mensaje</button>
 
+        </form>
+    </section>
+    <!-- Contacto -->
+    <!-- Contacto -->
 
 
 
@@ -418,10 +509,10 @@ quienes somos? -->
                 </a>
                 <div class="rr-ss">
                     <i class="fa-brands fa-whatsapp"></i>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/brantoinversiones" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/BrantoInv" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/brantoinversiones/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/binvcapital/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="datos-fiscales">

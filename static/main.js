@@ -133,3 +133,33 @@ masSobreNosotros.addEventListener("touchend",ocultarSobreNosotros)
 /*sobre nosotros */
 
 
+/* Touch */
+/* Touch 
+
+var menuNav = document.getElementById("header");
+var starY = 0;
+
+//Detectar el evento tocuchsatr
+document.addEventListener("touchstart",function(e){
+  // Obtener la posición inicial del dedo
+  starY = e.touches[0].clientY;
+});
+
+// Detectar el evento touchmove
+document.addEventListener("touchmove", function(e) {
+  // Obtener la posición actual del dedo
+  var currentY = e.touches[0].clientY;
+  
+  // Calcular la distancia deslizada
+  var distance = currentY - starY;
+  
+  // Mostrar u ocultar el nav dependiendo de la dirección del deslizamiento
+  if (distance > 0) {
+    menuNav.style.position = "absolute";
+  } else {
+    pass;
+  }
+});
+
+ Touch */
+/* Touch */

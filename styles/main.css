@@ -32,7 +32,7 @@ button {
 }
 
 .bg-green {
-  background-color: #2be9aa;
+  background-color: #20ffb5;
   color: #131313;
   font-size: 1rem;
   transition: ease all 0.3s;
@@ -697,7 +697,7 @@ body {
     height: 100%;
     overflow: hidden;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 550px;
   }
   .practicidad .container {
     width: inherit;
@@ -791,6 +791,137 @@ body {
   }
 }
 /*----------------------------------------------------------------aliados*/
+/*Inversiones*/
+/*Inversiones*/
+.inversiones {
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px 50px 20px;
+  background-color: #2be9aa;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  margin-top: -450px;
+}
+.inversiones i {
+  font-size: 4rem;
+  margin: 50px 0px 20px 0px;
+}
+.inversiones h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+.inversiones .container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+  padding: 5px;
+}
+.inversiones .container .item {
+  width: 100%;
+  height: 100px;
+}
+.inversiones .container .item button {
+  background-color: rgba(140, 194, 255, 0.9);
+  color: #f1f4f8;
+  width: 100%;
+  height: 100%;
+  font-size: 1.1rem;
+  box-shadow: 0px 0px 0px 0.5px white;
+}
+.inversiones .container .item button i {
+  margin: 20px 0px 5px 0px;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.inversiones .container #cap-market {
+  background-image: url(/static/img/inversiones/market.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+.inversiones .container #real-state {
+  background-image: url(/static/img/inversiones/real-state.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+.inversiones .container #financiamiento {
+  background-image: url(/static/img/inversiones/financiamiento.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+.inversiones .container #criptos {
+  background-image: url(/static/img/inversiones/criptos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+/*Inversiones*/
+/*Inversiones*/
+/*Contacto*/
+#contacto::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(/static/img/form/2.jpg);
+  background-size: cover;
+  z-index: -4;
+  padding-top: 100px;
+}
+
+#contacto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: rgba(2, 29, 88, 0.6);
+  color: #ffffff;
+}
+#contacto form {
+  margin-top: 50px;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#contacto form input, #contacto form select {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+#contacto form #mensaje {
+  width: 100%;
+  height: auto;
+}
+
+/*Contacto*/
 footer {
   margin-bottom: 0;
   width: 100%;
