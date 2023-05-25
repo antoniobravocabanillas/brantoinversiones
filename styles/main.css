@@ -363,6 +363,10 @@ body {
     line-height: 2.5rem;
     font-weight: 700;
   }
+  .inicio .textos .spech #parrafo-compplementario {
+    display: none;
+    font-size: 2rem;
+  }
   .inicio .butns {
     display: flex;
     flex-direction: column;
@@ -371,6 +375,15 @@ body {
   .inicio .butns i {
     font-size: 0.8rem;
     margin-right: 5px;
+  }
+  .btns-desk {
+    display: none;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    width: 15%;
+    background: green;
   }
   /*SILDER TEXT*/
   /*SILDER TEXT*/
@@ -722,6 +735,11 @@ body {
     margin-bottom: 50px;
     position: relative;
   }
+  .practicidad .container .image-account .texto-quiero-empezar {
+    width: 40%;
+    height: auto;
+    display: none;
+  }
   .practicidad .container .image-account .slide-items {
     width: 100%;
     height: 100%;
@@ -994,4 +1012,8 @@ footer .items-footer .datos-fiscales .datos a {
   font-size: 0.8rem;
   letter-spacing: 0.5px;
   font-weight: 300;
+}
+
+.desarrollador {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

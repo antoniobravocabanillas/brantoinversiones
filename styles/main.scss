@@ -241,6 +241,10 @@ body {
                     line-height: 2.5rem;
                     font-weight: 700;
                 }
+                #parrafo-compplementario{
+                    display: none;
+                    font-size: 2rem;
+                }
 
             }
         }
@@ -256,6 +260,15 @@ body {
                 margin-right: 5px;
             }
         }
+    }
+    .btns-desk{
+        display: none;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+        width: 15%;
+        background: green;
     }
 
 
@@ -655,6 +668,12 @@ body {
                 height: auto;
                 margin-bottom: 50px;
                 position: relative;
+                .texto-quiero-empezar{
+                    width: 40%;
+                    height: auto;
+                    display: none;
+                }
+                
                 .slide-items{
                     width: 100%;
                     height: 100%;
@@ -996,3 +1015,4 @@ footer {
 
     }
 }
+.desarrollador{display: none;}
