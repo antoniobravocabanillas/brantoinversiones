@@ -46,6 +46,14 @@ button {
   width: 150px;
 }
 
+.bg-primary-movil {
+  background-color: rgba(2, 29, 88, 0.9);
+  color: #f1f4f8;
+  font-size: 1rem;
+  transition: ease all 0.3s;
+  width: 150px;
+}
+
 .bg-green:hover {
   background-color: rgb(86, 255, 129);
   color: black;
@@ -133,6 +141,31 @@ button {
 }
 
 /*TOGLE*/
+.user-access-btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.user-access-btn span {
+  font-size: 0.6rem;
+}
+.user-access-btn i {
+  font-size: 1.2rem;
+  color: #525252;
+}
+
+.normal-movil {
+  height: 30px;
+  width: 140px;
+}
+.normal-movil i {
+  margin-right: 10px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -184,6 +217,36 @@ body {
 @media only screen and (max-width: 600px) {
   .home-bg {
     position: relative;
+  }
+  .user-access {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 70px;
+    background-color: #f1f4f8;
+    margin: auto;
+  }
+  .user-access h5 {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: #021d58;
+    margin: auto;
+    padding: 0px;
+    height: 10px;
+    display: block;
+  }
+  .user-access > *:last-child {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid rgba(19, 19, 19, 0.5);
+    grid-column: 1/-1;
+    /* Ocupa todas las columnas disponibles */
   }
   .home-bg::before {
     content: "";
@@ -375,6 +438,9 @@ body {
   .svg-wave-invertido {
     margin-top: -150px;
   }
+  .svg-wave-invertido-servicios {
+    margin-top: -100px;
+  }
   .quienes-somos {
     padding-top: 50px;
     width: 100%;
@@ -524,7 +590,11 @@ body {
     height: inherit;
     padding-bottom: 100px;
   }
-  #servicios .items-servicios .inversiones {
+  #servicios .items-servicios .inversiones,
+  #servicios .items-servicios .planificacion,
+  #servicios .items-servicios .jubilacion,
+  #servicios .items-servicios .seguros,
+  #servicios .items-servicios .impuestos {
     margin: auto;
     width: 90%;
     height: auto;
@@ -536,114 +606,261 @@ body {
     background-color: #55a3fc;
     border-radius: 50px;
     padding: 15px 10px;
-    box-shadow: 0px -3px 0px 0px rgba(140, 194, 255, 0.3), 3px 10px 0px 0px rgba(241, 244, 248, 0.2);
+    box-shadow: 0px -2px 0px 0px rgba(140, 194, 255, 0.3), 2px 5px 0px 0px rgba(241, 244, 248, 0.2);
   }
-  #servicios .items-servicios .inversiones .icono {
+  #servicios .items-servicios .inversiones .icono,
+  #servicios .items-servicios .planificacion .icono,
+  #servicios .items-servicios .jubilacion .icono,
+  #servicios .items-servicios .seguros .icono,
+  #servicios .items-servicios .impuestos .icono {
     width: auto;
     height: auto;
     border-radius: 100%;
     background-color: #ffffff;
   }
-  #servicios .items-servicios .inversiones .icono img {
+  #servicios .items-servicios .inversiones .icono img,
+  #servicios .items-servicios .planificacion .icono img,
+  #servicios .items-servicios .jubilacion .icono img,
+  #servicios .items-servicios .seguros .icono img,
+  #servicios .items-servicios .impuestos .icono img {
     width: 80px;
     height: 80px;
     padding: 10px;
   }
-  #servicios .items-servicios .inversiones .tittle {
+  #servicios .items-servicios .inversiones .tittle,
+  #servicios .items-servicios .planificacion .tittle,
+  #servicios .items-servicios .jubilacion .tittle,
+  #servicios .items-servicios .seguros .tittle,
+  #servicios .items-servicios .impuestos .tittle {
     display: flex;
     flex-direction: column;
-    color: #f1f4f8;
-    font-size: 1.2 0.9rem;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     margin: auto;
   }
-  #servicios .items-servicios .inversiones .tittle h3 {
-    display: block;
+  #servicios .items-servicios .inversiones .tittle h3,
+  #servicios .items-servicios .planificacion .tittle h3,
+  #servicios .items-servicios .jubilacion .tittle h3,
+  #servicios .items-servicios .seguros .tittle h3,
+  #servicios .items-servicios .impuestos .tittle h3 {
+    width: 100%;
     padding: 0;
-    font-size: 1.6rem;
+    font-size: 0.9rem;
     margin: 0;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: start;
   }
-  #servicios .items-servicios .inversiones .tittle p {
+  #servicios .items-servicios .inversiones .tittle p,
+  #servicios .items-servicios .planificacion .tittle p,
+  #servicios .items-servicios .jubilacion .tittle p,
+  #servicios .items-servicios .seguros .tittle p,
+  #servicios .items-servicios .impuestos .tittle p {
     display: block;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0;
     margin: 0;
+    color: #f1f4f8;
   }
   /*SERVICIOS*/
-  footer {
-    margin-bottom: 0;
+  /*----------------------------------------------------------------aliados*/
+  .practicidad::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    background-color: #131313;
-    padding: 30px 40px 0 40px;
-    font-family: "Nunito Sans", sans-serif;
+    height: 100%;
+    z-index: -2;
+    background-image: url(/static/img/bg/10.png);
+    background-size: cover;
+    filter: brightness(0.1);
+    filter: opacity(0.5);
   }
-  footer a {
-    text-decoration: none;
+  .practicidad::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(170deg, rgba(2, 29, 88, 0.1), rgba(2, 29, 88, 0.1));
+    background-blend-mode: multiply;
+    opacity: 0.9;
   }
-  footer .items-footer {
+  .practicidad {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .practicidad .container {
+    width: inherit;
+    height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
-  footer .items-footer .brand {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: inherit;
-    height: auto;
+  .practicidad .container .tittle {
+    width: 90%;
   }
-  footer .items-footer .brand img {
-    width: 50px;
-  }
-  footer .items-footer .brand .rr-ss {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.6em;
-    width: auto;
-  }
-  footer .items-footer .brand .rr-ss i {
+  .practicidad .container .tittle h2 {
     font-size: 1.8rem;
-    color: #8cc2ff;
-  }
-  footer .items-footer .datos-fiscales {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.6em;
-  }
-  footer .items-footer .datos-fiscales .nombre {
-    margin-top: 30px;
-    color: #f1f4f8;
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    padding: 0;
-  }
-  footer .items-footer .datos-fiscales .datos {
-    margin-top: -20px;
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1px;
+    color: #525252;
+    text-align: center;
     margin-bottom: 50px;
   }
-  footer .items-footer .datos-fiscales .datos a {
-    text-align: center;
-    display: block;
-    color: #f1f4f8;
-    font-size: 0.8rem;
-    letter-spacing: 0.5px;
-    font-weight: 300;
+  .practicidad .container .image-account {
+    width: 80%;
+    height: auto;
+    margin-bottom: 50px;
+    position: relative;
   }
+  .practicidad .container .image-account .slide-items {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 30;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    animation-name: slide-items;
+    box-shadow: 10px 10px 20px 5px rgba(19, 19, 19, 0.2);
+    touch-action: cross-slide-x;
+    border: 10px solid rgba(241, 244, 248, 0.4);
+    border-radius: 10px;
+  }
+  .practicidad .container .image-account .slide-items::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("/static/img/bg/laptop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 31;
+  }
+  .practicidad .container .image-account img {
+    scroll-snap-align: start;
+    z-index: 108;
+    width: 100%;
+    position: relative;
+    z-index: 79;
+  }
+  .practicidad .steps {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .practicidad .steps .step {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .practicidad .steps .step .texto h4 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .practicidad .steps .step .texto p {
+    font-size: 1.1rem;
+  }
+  .practicidad .steps .step .texto button {
+    margin: 20px 0px;
+  }
+  .practicidad .steps .step .icono {
+    width: 100%;
+  }
+  .practicidad .steps .step .icono img {
+    width: 100%;
+  }
+}
+/*----------------------------------------------------------------aliados*/
+footer {
+  margin-bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #131313;
+  padding: 30px 40px 100px 40px;
+  font-family: "Nunito Sans", sans-serif;
+}
+footer a {
+  text-decoration: none;
+}
+footer .items-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+footer .items-footer .brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: inherit;
+  height: auto;
+}
+footer .items-footer .brand img {
+  width: 50px;
+}
+footer .items-footer .brand .rr-ss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+  width: auto;
+}
+footer .items-footer .brand .rr-ss i {
+  font-size: 1.8rem;
+  color: #8cc2ff;
+}
+footer .items-footer .datos-fiscales {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6em;
+}
+footer .items-footer .datos-fiscales .nombre {
+  margin-top: 30px;
+  color: #f1f4f8;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+footer .items-footer .datos-fiscales .datos {
+  margin-top: -20px;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  margin-bottom: 50px;
+}
+footer .items-footer .datos-fiscales .datos a {
+  text-align: center;
+  display: block;
+  color: #f1f4f8;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */
