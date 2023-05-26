@@ -504,7 +504,7 @@ body {
     margin-top: -140px;
   }
   .svg-wave-invertido-servicios {
-    margin-top: -100px;
+    margin-top: -1000px;
   }
   .quienes-somos {
     padding-top: 50px;
@@ -759,7 +759,7 @@ body {
     height: 100%;
     overflow: hidden;
     padding-top: 100px;
-    padding-bottom: 550px;
+    padding-bottom: 250px;
   }
   .practicidad .container {
     width: inherit;
@@ -864,9 +864,8 @@ body {
   .inversiones {
     width: 100%;
     height: 100%;
-    padding: 40px 20px 50px 20px;
-    background-color: #2be9aa;
-    color: #ffffff;
+    padding: 0px 20px 100px 20px;
+    color: #f1f4f8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -875,7 +874,8 @@ body {
     border-top-right-radius: 50%;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
-    margin-top: -450px;
+    margin-top: -200px;
+    background-color: #021d58;
   }
   .inversiones i {
     font-size: 4rem;
@@ -889,17 +889,21 @@ body {
   .inversiones .container {
     width: 100%;
     height: 100%;
+    margin: auto;
+    margin-bottom: 0;
+    background-color: transparent;
+    justify-content: center;
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 15px;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 2%;
     padding: 5px;
   }
   .inversiones .container .item {
     width: 100%;
-    height: 100px;
+    height: 200px;
   }
   .inversiones .container .item button {
-    background-color: rgba(140, 194, 255, 0.9);
+    background-color: rgba(19, 19, 19, 0.6);
     color: #f1f4f8;
     width: 100%;
     height: 100%;
@@ -909,7 +913,7 @@ body {
   .inversiones .container .item button i {
     margin: 20px 0px 5px 0px;
     padding: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -1071,6 +1075,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    color: #ffffff;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 0.9rem;
   }
   .desarrollador i {
     color: #f1f4f8;
