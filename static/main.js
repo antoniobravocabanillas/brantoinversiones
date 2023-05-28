@@ -27,6 +27,7 @@ setInterval(updateText, 1000); // Cambiar la frase
 
 
 
+const ITEM_MENU =document.getElementsByClassName("item-menu");
 
 
 
@@ -39,11 +40,22 @@ closeMenu.addEventListener('click', function () {
   menu.classList.remove('active');
 });
 
+for(let i = 0; i < ITEM_MENU.length; i++ ){
+  ITEM_MENU[i].addEventListener('click', function () {
+    menu.classList.remove('active');
+  });
+}
+
+
+
 servicios.addEventListener('click', function () {
   if (menu.classList.contains('active')) {
     menu.classList.remove('active');
   }
 });
+
+
+
 
 //Mision------------------------------------------------------------//Mision
 const itemNosotros = document.getElementById("itemUno"); //Div de el ITEM UNO
@@ -163,3 +175,12 @@ document.addEventListener("touchmove", function(e) {
 
  Touch */
 /* Touch */
+
+const whatsappButton = document.querySelector('.whatsapp-button');
+
+whatsappButton.addEventListener('click', function() {
+  const message = whatsappButton.getAttribute('data-text');
+  console.log(message); // Imprime el mensaje en la consola
+
+  // Realiza las acciones adicionales con el mensaje personalizado
+});

@@ -916,6 +916,69 @@ body {
 
 
 
+.icono-flotante-whatsapp{
+    width: 50px;
+    height: 50px;
+    position:fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 999;
+    animation-name: whatsapp-button;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+
+    .whatsapp-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        background-color: $contraste;
+        width: 100%;
+        height: 100%;
+       box-shadow: inset 1px 1px 2px $white;
+        border-radius: 100%;
+        text-decoration: none;
+        cursor: pointer;
+        i{
+            font-size: 2.5rem;
+            color: $white;
+            width: 40px;
+            height: 40px;
+            display: block;
+            margin-left: 4px;
+            margin-bottom: 2px;
+        }
+       
+    }
+}
+
+@keyframes whatsapp-button{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-20px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+
+
+
+
 footer {
    
     margin-bottom: 0;
