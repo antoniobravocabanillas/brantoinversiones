@@ -622,23 +622,24 @@ body {
   .quienes-somos .cards .card .item.active {
     height: 90%;
   }
-  .quienes-somos .cards .contenedor-mision {
-    background-image: url(/static/img/bg/5.jpg);
+  .quienes-somos .cards .contenedor-cohen {
+    background-image: url(/static/img/aliados/Cohen.png);
     border: none;
     border-radius: 30px;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
-  .quienes-somos .cards .contenedor-vision {
-    background-image: url(/static/img/bg/2.jpg);
+  .quienes-somos .cards .contenedor-inviu {
+    background-image: url(/static/img/aliados/inviu.png);
     border: none;
     border-radius: 30px;
-    background-size: cover;
+    background-size: contain;
   }
-  .quienes-somos .cards .contenedor-nosotros {
-    background-image: url(/static/img/bg/1.jpg);
+  .quienes-somos .cards .contenedor-iol {
+    background-image: url(/static/img/aliados/iol.png);
+    background-size: contain;
     border: none;
     border-radius: 30px;
-    background-size: cover;
   }
   /*SERVICIOS*/
   #servicios {
@@ -1161,4 +1162,4 @@ body {
     font-weight: 400;
     font-family: "Red Hat Text", sans-serif;
   }
-}/*# sourceMappingURL=mainEscritorio.css.map */
+}/*# sourceMappingURL=aliadosEscritorio.css.map */

@@ -61,6 +61,7 @@ body {
     .home-bg {
         position: relative;
     }
+
     .user-access {
         display: none;
         grid-template-columns: repeat(3, 1fr);
@@ -101,10 +102,10 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background: url(/static/img/bg/4.jpg);
+      background: url(/static/img/bg/4.jpg);
         background-size: cover;
-        filter: brightness(0.1);
-        z-index: -2;
+        filter: brightness(0.4);
+        z-index: -3;
     }
 
     .home-bg::after {
@@ -114,12 +115,26 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(170deg, rgba($primary, 0.5), rgba($primary, 0.7), rgba($primary, 0.2));
-        background-blend-mode: multiply;
-        opacity: 0.9;
-        z-index: -1;
-    }
+         background: linear-gradient(170deg, rgba($primary, 1), rgba($primary, 1), rgba($primary, 1));
 
+        background-blend-mode:overlay;
+        opacity: 0.8;
+        z-index: -2;
+    }
+  /*  .home-bg:first-child{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3cpath d='M0 513.11L10 551.57L20 483.8L30 512.26L40 548.47L50 554.89L60 502.31L70 542.94L80 552.94L90 550.76L100 551.4L110 495.69L120 454.95L130 480.06L140 419.23L150 438.64L160 472.58L170 406.25L180 445.69L190 494.4L200 499.51L210 433.17L220 385.1L230 319.23L240 297.85L250 308.87L260 338.9L270 361.55L280 338.64L290 364.95L300 340.8L310 409.79L320 462.55L330 477.69L340 438.44L350 440.88L360 444.87L370 465.3L380 416.58L390 349.05L400 303.7L410 325.31L420 290.37L430 248.76L440 185.1L450 202.41L460 226.71L470 199.9L480 166.19L490 179.52L500 183.62L510 174.86L520 226.51L530 160.58L540 167.89L550 197.82L560 227.64L570 264.85L580 241.58L590 265.62L600 239.12L610 241.07L620 243.41L630 279.57L640 289.71L650 340.28L660 280.14L670 251.33L680 272L690 212.91L700 277.03L710 330.97L720 385.34L730 417.21L740 396.96L750 343.44L760 382.38L770 395.13L780 361.39L790 400.32L800 334.96L810 376.94L820 319.58L830 332.02L840 313.29L850 353.1L860 420.1L870 387.87L880 350.14L890 315.12L900 346.94L910 318.75L920 279.22L930 277.76L940 243.74L950 192.97L960 198.54L970 179.24L980 176.35L990 118.27L1000 64.99L1010 110.24L1020 159.35L1030 215.92L1040 205.68L1050 159.77L1060 185.57L1070 182.12L1080 237.93L1090 231.02L1100 222.3L1110 205.91L1120 240.01L1130 254.15L1140 251.05L1150 271.44L1160 283.59L1170 329.99L1180 276.75L1190 276.76L1200 220.12L1210 238.97L1220 198.94L1230 216.56L1240 231.89L1250 199.82L1260 168.02L1270 195.66L1280 204.68L1290 171.55L1300 118.61L1310 177.55L1320 240.72L1330 277.31L1340 310.38L1350 278.05L1360 340.58L1370 364.03L1380 403.27L1390 362.03L1400 403.25L1410 431.72L1420 485.86L1430 468.25L1440 467.05' stroke='%23224b75' stroke-width='2'%3e%3c/path%3e%3cpath d='M0 513.11L10 551.57L20 483.8L30 512.26L40 548.47L50 554.89L60 502.31L70 542.94L80 552.94L90 550.76L100 551.4L110 495.69L120 454.95L130 480.06L140 419.23L150 438.64L160 472.58L170 406.25L180 445.69L190 494.4L200 499.51L210 433.17L220 385.1L230 319.23L240 297.85L250 308.87L260 338.9L270 361.55L280 338.64L290 364.95L300 340.8L310 409.79L320 462.55L330 477.69L340 438.44L350 440.88L360 444.87L370 465.3L380 416.58L390 349.05L400 303.7L410 325.31L420 290.37L430 248.76L440 185.1L450 202.41L460 226.71L470 199.9L480 166.19L490 179.52L500 183.62L510 174.86L520 226.51L530 160.58L540 167.89L550 197.82L560 227.64L570 264.85L580 241.58L590 265.62L600 239.12L610 241.07L620 243.41L630 279.57L640 289.71L650 340.28L660 280.14L670 251.33L680 272L690 212.91L700 277.03L710 330.97L720 385.34L730 417.21L740 396.96L750 343.44L760 382.38L770 395.13L780 361.39L790 400.32L800 334.96L810 376.94L820 319.58L830 332.02L840 313.29L850 353.1L860 420.1L870 387.87L880 350.14L890 315.12L900 346.94L910 318.75L920 279.22L930 277.76L940 243.74L950 192.97L960 198.54L970 179.24L980 176.35L990 118.27L1000 64.99L1010 110.24L1020 159.35L1030 215.92L1040 205.68L1050 159.77L1060 185.57L1070 182.12L1080 237.93L1090 231.02L1100 222.3L1110 205.91L1120 240.01L1130 254.15L1140 251.05L1150 271.44L1160 283.59L1170 329.99L1180 276.75L1190 276.76L1200 220.12L1210 238.97L1220 198.94L1230 216.56L1240 231.89L1250 199.82L1260 168.02L1270 195.66L1280 204.68L1290 171.55L1300 118.61L1310 177.55L1320 240.72L1330 277.31L1340 310.38L1350 278.05L1360 340.58L1370 364.03L1380 403.27L1390 362.03L1400 403.25L1410 431.72L1420 485.86L1430 468.25L1440 467.05L1440 560L0 560z' fill='url(%23SvgjsLinearGradient1003)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='SvgjsLinearGradient1003'%3e%3cstop stop-opacity='0.65' stop-color='%23224b75' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='%23508dcc' offset='0.8'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+        z-index: -1;
+        background-size: cover;
+        opacity: 0.9;
+
+    }
+*/
     /* Resto de estilos */
 
 
@@ -131,20 +146,21 @@ body {
         justify-content: space-between;
         align-items: center;
         background-color: transparent;
-        
+
 
         .brand {
             width: 20%;
             margin-left: 5%;
-            
+
             img {
                 width: 150px;
             }
         }
 
-        
+
         .nav {
             width: 60%;
+
             .menu {
                 position: relative;
                 display: flex;
@@ -175,6 +191,7 @@ body {
                     }
                 }
             }
+
             .menu.active {
                 transition-duration: 0.3s;
                 right: 0;
@@ -201,25 +218,29 @@ body {
                 transition-duration: 0.3s;
                 display: none;
             }
+
             #closeMenu {
                 display: none;
             }
-            .user-access-btn{
+
+            .user-access-btn {
                 display: block;
             }
 
         }
-        .burger{
+
+        .burger {
             display: none;
         }
-        .btns-desk{
+
+        .btns-desk {
             display: flex;
             gap: 15px;
             justify-content: center;
             align-items: center;
             margin-right: 5%;
             width: 15%;
-           
+
         }
 
     }
@@ -243,7 +264,7 @@ body {
             justify-content: center;
             margin-bottom: 40px;
             width: 700px;
-            
+
 
             title {
                 font-size: $h5;
@@ -264,7 +285,8 @@ body {
                     font-weight: 700;
                     font-size: 3rem;
                 }
-                #parrafo-compplementario{
+
+                #parrafo-compplementario {
                     display: block;
                     font-size: 1.2rem;
                 }
@@ -313,28 +335,91 @@ body {
         color: $contraste;
 
     }
+
     @keyframes typing {
-        0% {transform: translateX(-1500%);}
-        5% {transform: translateX(-1350%);}
-        10% {transform: translateX(-1200%);}
-        15% {transform: translateX(-1050%);}
-        20% {  transform: translateX(-900%);}
-        25%  {   transform: translateX(-750%);}
-        30% {   transform: translateX(-600%);}
-        35% {  transform: translateX(-450%);}
-        40% {  transform: translateX(-300%);}
-        45% {  transform: translateX(-150%);}
-        50% {  transform: translateX(0%);}
-        55% {transform: translateX(150%);}
-        60% {transform: translateX(300%);}
-        65% {transform: translateX(450%);}
-        70% {transform: translateX(600%);}
-        75% {  transform: translateX(750%);}
-        80%  {   transform: translateX(900%);}
-        85% {   transform: translateX(950%);}
-        90% {  transform: translateX(1050%);}
-        95% {  transform: translateX(1200%);}
-        100% {  transform: translateX(1350%);}
+        0% {
+            transform: translateX(-1500%);
+        }
+
+        5% {
+            transform: translateX(-1350%);
+        }
+
+        10% {
+            transform: translateX(-1200%);
+        }
+
+        15% {
+            transform: translateX(-1050%);
+        }
+
+        20% {
+            transform: translateX(-900%);
+        }
+
+        25% {
+            transform: translateX(-750%);
+        }
+
+        30% {
+            transform: translateX(-600%);
+        }
+
+        35% {
+            transform: translateX(-450%);
+        }
+
+        40% {
+            transform: translateX(-300%);
+        }
+
+        45% {
+            transform: translateX(-150%);
+        }
+
+        50% {
+            transform: translateX(0%);
+        }
+
+        55% {
+            transform: translateX(150%);
+        }
+
+        60% {
+            transform: translateX(300%);
+        }
+
+        65% {
+            transform: translateX(450%);
+        }
+
+        70% {
+            transform: translateX(600%);
+        }
+
+        75% {
+            transform: translateX(750%);
+        }
+
+        80% {
+            transform: translateX(900%);
+        }
+
+        85% {
+            transform: translateX(950%);
+        }
+
+        90% {
+            transform: translateX(1050%);
+        }
+
+        95% {
+            transform: translateX(1200%);
+        }
+
+        100% {
+            transform: translateX(1350%);
+        }
     }
 
     /*SILDER TEXT*/
@@ -342,19 +427,19 @@ body {
     .svg-wave {
 
         margin-top: -400px;
-        
-        
+
+
     }
-    
+
     .svg-wave-invertido {
         margin-top: -140px;
-        
+
     }
 
     .svg-wave-invertido-servicios {
         margin-top: -1000px;
-        
-        
+
+
     }
 
 
@@ -659,13 +744,14 @@ body {
                 margin-bottom: 50px;
                 position: relative;
                 display: flex;
-                .texto-quiero-empezar{
+
+                .texto-quiero-empezar {
                     width: 40%;
                     height: auto;
                 }
-                
-                
-                .slide-items{
+
+
+                .slide-items {
                     width: 55%;
                     height: 100%;
                     position: relative;
@@ -676,12 +762,12 @@ body {
                     scroll-snap-type: x mandatory;
                     animation-name: slide-items;
                     box-shadow: 10px 10px 20px 5px rgba($color: $black, $alpha: 0.2);
-                    touch-action:cross-slide-x;
+                    touch-action: cross-slide-x;
                     border: 10px solid rgba($color: $white, $alpha: 0.4);
                     border-radius: 10px;
                 }
 
-                .slide-items::before{
+                .slide-items::before {
                     content: "";
                     position: absolute;
                     display: block;
@@ -700,10 +786,10 @@ body {
                     width: 100%;
                     position: relative;
                     z-index: 79;
-                    
+
                 }
 
-                
+
             }
 
 
@@ -718,6 +804,7 @@ body {
             justify-content: center;
             align-items: center;
             position: relative;
+
             .step {
 
                 width: 33%;
@@ -727,17 +814,19 @@ body {
                 justify-content: center;
                 align-items: center;
                 gap: 30px;
-               
-                .texto{
-                    h4{
+
+                .texto {
+                    h4 {
                         font-size: 1.8rem;
                         line-height: 2rem;
 
                     }
-                    p{
+
+                    p {
                         font-size: 1.1rem;
                     }
-                    button{
+
+                    button {
                         margin: 20px 0px;
                     }
                 }
@@ -755,351 +844,376 @@ body {
 
 
 
-/*----------------------------------------------------------------aliados*/
+    /*----------------------------------------------------------------aliados*/
 
-/*Inversiones*/
-/*Inversiones*/
-.inversiones{
-    width: 100%;
-    height: 100%;
-    padding: 0px 20px 100px 20px;
-    color: $white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius:50% ;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 0%;
-    border-bottom-right-radius: 0%;
-    margin-top: -200px;
-    background-color:rgba($color:  $primary, $alpha: 1);
-    
-    i{
-        font-size: 4rem;
-        margin: 50px 0px 20px 0px;
-    }
-    h1{
-        font-size: $h2;
-        text-align: center;
-        margin: 0px 0px 50px 0px;
-    }
-    .container{
+    /*Inversiones*/
+    /*Inversiones*/
+    .inversiones {
         width: 100%;
         height: 100%;
-        margin: auto;
-        margin-bottom: 0;
-        background-color: transparent;
-        justify-content: center;
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20%; 
-        gap: 2%;
-        padding: 5px;
-        .item{
-            width: 100% ;
-            height: 200px;
-            button{
-                i{
-                    margin: 20px 0px 5px 0px;
-                    padding: 0;
-                    font-size: 1.2rem;
-                    color: #ffffff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                }
-                background-color: rgba($color: $black, $alpha: 0.6);
-                color: $white;
-                width: 100%;
-                height: 100%;
-                font-size: 1.1rem;
-                box-shadow: 0px 0px 0px 0.5px white;
-            }
-        }
-        #cap-market{
-            background-image: url(/static/img/inversiones/market.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 5px;
-
-        }
-        #real-state{
-            background-image: url(/static/img/inversiones/real-state.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 5px;
-
-        }
-        #financiamiento{
-            background-image: url(/static/img/inversiones/financiamiento.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 5px;
-
-
-        }
-        #criptos{
-            background-image: url(/static/img/inversiones/criptos.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 5px;
-
-        }
-    }
-}
-
-
-
-/*Inversiones*/
-/*Inversiones*/
-
-/*Contacto*/
-#contacto::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/static/img/form/2.jpg);
-    background-size: cover;
-    z-index: -4;
-    padding-top: 100px;
-
-}
-
-
-#contacto{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-top: 65px;
-    padding-bottom: 65px;
-    background-color: rgba($color: $primary, $alpha: 0.6);
-    color: #ffffff;
-    gap: 100px;
-    form{
-        margin-top: 50px;
-        width: 40%;
-        height: auto;
-        
+        padding: 0px 20px 100px 20px;
+        color: $white;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        gap: 10px;
-        input, select{
-            width: 100%;
-            height: 40px;
-            border-radius: 5px;
-            border: none;
-            padding: 10px;
-        }
-        #mensaje{
-            width: 100%;
-            height: auto;
-           
+        align-items: center;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        margin-top: -200px;
+        background-color: rgba($color: $primary, $alpha: 1);
+
+        i {
+            font-size: 4rem;
+            margin: 50px 0px 20px 0px;
         }
 
+        h1 {
+            font-size: $h2;
+            text-align: center;
+            margin: 0px 0px 50px 0px;
+        }
 
+        .container {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            margin-bottom: 0;
+            background-color: transparent;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            gap: 2%;
+            padding: 5px;
+
+            .item {
+                width: 100%;
+                height: 200px;
+
+                button {
+                    i {
+                        margin: 20px 0px 5px 0px;
+                        padding: 0;
+                        font-size: 1.2rem;
+                        color: #ffffff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+
+                    background-color: rgba($color: $black, $alpha: 0.6);
+                    color: $white;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 1.1rem;
+                    box-shadow: 0px 0px 0px 0.5px white;
+                }
+            }
+
+            #cap-market {
+                background-image: url(/static/img/inversiones/market.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 5px;
+
+            }
+
+            #real-state {
+                background-image: url(/static/img/inversiones/real-state.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 5px;
+
+            }
+
+            #financiamiento {
+                background-image: url(/static/img/inversiones/financiamiento.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 5px;
+
+
+            }
+
+            #criptos {
+                background-image: url(/static/img/inversiones/criptos.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 5px;
+
+            }
+        }
     }
-}
-/*Contacto*/
 
 
 
+    /*Inversiones*/
+    /*Inversiones*/
 
-
-
-
-
-
-.icono-flotante-whatsapp{
-    width: 50px;
-    height: 50px;
-    position:fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    animation-name: whatsapp-button;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-
-    .whatsapp-button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        background-color: $contraste;
+    /*Contacto*/
+    #contacto::before {
+        content: "";
+        position: absolute;
         width: 100%;
         height: 100%;
-       box-shadow: inset 1px 1px 2px $white;
-        border-radius: 100%;
-        text-decoration: none;
-        cursor: pointer;
-        i{
-            font-size: 2.5rem;
-            color: $white;
-            width: 40px;
-            height: 40px;
-            display: block;
-            margin-left: 4px;
-            margin-bottom: 2px;
-        }
-       
-    }
-}
+        background-image: url(/static/img/form/2.jpg);
+        background-size: cover;
+        z-index: -4;
+        padding-top: 100px;
 
-@keyframes whatsapp-button{
-    0%{
-        transform: translateY(0px);
     }
-    20%{
-        transform: translateY(-20px);
-    }
-    40%{
-        transform: translateY(0px);
-    }
-    60%{
-        transform: translateY(-20px);
-    }
-    80%{
-        transform: translateY(0px);
-    }
-    100%{
-        transform: translateY(-20px);
-    }
-}
 
 
-
-
-
-footer {
-   
-    margin-bottom: 0;
-    width: 100%;
-    height: auto;
-    background-color: $black;
-    padding: 30px 40px 40px 40px;
-    font-family: $font1;
-
-    a {
-        text-decoration: none;
-    }
-    .items-footer {
+    #contacto {
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
         align-items: center;
-        width: 80%;
+        justify-content: center;
+        padding-top: 65px;
+        padding-bottom: 65px;
+        background-color: rgba($color: $primary, $alpha: 0.6);
+        color: #ffffff;
+        gap: 100px;
 
-        .brand {
+        form {
+            margin-top: 50px;
+            width: 40%;
+            height: auto;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            input,
+            select {
+                width: 100%;
+                height: 40px;
+                border-radius: 5px;
+                border: none;
+                padding: 10px;
+            }
+
+            #mensaje {
+                width: 100%;
+                height: auto;
+
+            }
+
+
+        }
+    }
+
+    /*Contacto*/
+
+
+
+
+
+
+
+
+
+    .icono-flotante-whatsapp {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        animation-name: whatsapp-button;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+
+        .whatsapp-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            background-color: $contraste;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 1px 1px 2px $white;
+            border-radius: 100%;
+            text-decoration: none;
+            cursor: pointer;
+
+            i {
+                font-size: 2.5rem;
+                color: $white;
+                width: 40px;
+                height: 40px;
+                display: block;
+                margin-left: 4px;
+                margin-bottom: 2px;
+            }
+
+        }
+    }
+
+    @keyframes whatsapp-button {
+        0% {
+            transform: translateY(0px);
+        }
+
+        20% {
+            transform: translateY(-20px);
+        }
+
+        40% {
+            transform: translateY(0px);
+        }
+
+        60% {
+            transform: translateY(-20px);
+        }
+
+        80% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
+
+
+
+
+    footer {
+
+        margin-bottom: 0;
+        width: 100%;
+        height: auto;
+        background-color: $black;
+        padding: 30px 40px 40px 40px;
+        font-family: $font1;
+
+        a {
+            text-decoration: none;
+        }
+
+        .items-footer {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            width: inherit;
-            height: auto;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+
+            .brand {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: inherit;
+                height: auto;
 
 
-            img {
+                img {
 
-                width: 50px;
+                    width: 50px;
 
+                }
+
+                .rr-ss {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.6em;
+                    width: auto;
+
+                    i {
+                        font-size: 1.8rem;
+                        color: $complement;
+                    }
+                }
             }
 
-            .rr-ss {
+
+
+
+            .datos-fiscales {
+
+                width: 100%;
+                height: auto;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                gap: 0.6em;
-                width: auto;
-
-                i {
-                    font-size: 1.8rem;
-                    color: $complement;
-                }
-            }
-        }
-
-
-
-
-        .datos-fiscales {
-
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1.6em;
-            margin-left: 50px;
-
-            .nombre {
-                margin-top: 30px;
-                color: $white;
-                font-size: 1.2rem;
-
-                margin-bottom: 0;
-                padding: 0;
-            }
-
-            .datos {
-                margin-top: -20px;
-                width: inherit;
-                display: flex;
                 flex-direction: column;
-                justify-content: flex-start;
                 align-items: flex-start;
-                gap: 1px;
-                margin-bottom: 50px;
-                
+                gap: 1.6em;
+                margin-left: 50px;
 
-                a {
-                    text-align: center;
-                    display: block;
+                .nombre {
+                    margin-top: 30px;
                     color: $white;
-                    font-size: 0.8rem;
-                    letter-spacing: 0.5px;
-                    font-weight: 300;
+                    font-size: 1.2rem;
+
+                    margin-bottom: 0;
+                    padding: 0;
                 }
+
+                .datos {
+                    margin-top: -20px;
+                    width: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 1px;
+                    margin-bottom: 50px;
+
+
+                    a {
+                        text-align: center;
+                        display: block;
+                        color: $white;
+                        font-size: 0.8rem;
+                        letter-spacing: 0.5px;
+                        font-weight: 300;
+                    }
+                }
+
             }
-            
+
         }
 
     }
-    
-}
-.desarrollador{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    background-color:#131313;
-    border-top: 1px solid $gris;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: #ffffff;
-    font-family: $font2;
-    font-size: 0.9rem;
-    i{
-        color: $white;
-    }
-    a{
-        text-decoration: none;
+
+    .desarrollador {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        background-color: #131313;
+        border-top: 1px solid $gris;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
         color: #ffffff;
-        p{
-            font-size: 0.9rem;
-            font-weight: 400;
-            font-family: $font2;
+        font-family: $font2;
+        font-size: 0.9rem;
 
+        i {
+            color: $white;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+
+            p {
+                font-size: 0.9rem;
+                font-weight: 400;
+                font-family: $font2;
+
+            }
         }
     }
-}
 
 }
