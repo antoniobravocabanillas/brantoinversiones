@@ -3,7 +3,23 @@
 @import "./_styles/buttons";
 @import "./_styles/servicios";
 
-
+/*FORMULARIO DE APERTURA DE CUENTA*/
+    .inicio-apertura{
+        width: 100%;
+        height: 100%;
+      
+    }
+    
+    .iframe-form{
+       
+        width: 100%;
+        height: 900px;
+        
+        iframe{
+            width: 100%;
+            height: 200vh;
+        }
+    }
 
 
 * {
