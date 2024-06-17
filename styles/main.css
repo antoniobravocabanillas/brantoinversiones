@@ -215,6 +215,16 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  /*FORMULARIO DE APERTURA DE CUENTA*/
+  .iframe-form {
+    width: 100%;
+    height: 900px;
+    margin-top: 10vh;
+  }
+  .iframe-form iframe {
+    width: 100%;
+    height: 200vh;
+  }
   .home-bg {
     position: relative;
   }
@@ -329,6 +339,11 @@ body {
   .header .nav #servicios.menu.active {
     transition-duration: 0.3s;
     display: none;
+  }
+  /*FORMULARIO DE APERTURA*/
+  .inicio-apertura {
+    width: 100%;
+    height: 100%;
   }
   .inicio {
     border-top: 0.1px solid rgba(241, 244, 248, 0.2);
