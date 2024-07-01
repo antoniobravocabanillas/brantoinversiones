@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binv Capital</title>
+    <title>Binv Capital - Financiamiento Pyme en el Mercado de Capitales</title>
     <link rel="shortcut icon" href="/static/img/brand/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/aliados.css">
-    <link rel="stylesheet" href="./styles/aliadosEscritorio.css">
-
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/mainEscritorio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQD7342QTH">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XQD7342QTH');
+    </script>
 
 </head>
 
@@ -20,7 +29,7 @@
 
         <section id="header" class="header">
             <div class="brand">
-                <a href="">
+                <a href="index.html">
                     <img src="/static/img/brand/binv.png" alt="">
                 </a>
 
@@ -44,22 +53,30 @@
             </div>
             <!-- botones para la version de escritorio -->
             <div class="btns-desk">
-                <button class="normal bg-primary">Abrir cuenta</button>
-                <button class="normal">Acceso</button>
+                <button class="normal bg-primary"><a style="text-decoration: none; color: aliceblue;"
+                        href="aperturadecuenta.html">Abrir
+                        cuenta</a></button>
+                <button class="normal"><a style="text-decoration: none; color: rgb(16, 16, 16);"
+                        href="https://api.whatsapp.com/send/?phone=5491161000284&text=Hola%20Binv%20Capital%20ya%20tengo%20una%20cuenta%20con%20{completar%20con%20cual%20de%20nuestros%20aliados%20estrategicos%20tiene%20su%20cuenta}%20.%20Gracias%20nos%20comunicamos%20en%20breve%20.&type=phone_number&app_absent=0">Acceso</a></button>
             </div>
             <!-- botones para la version de escritorio -->
 
 
 
             <div class="user-access">
-                <button class="user-access-btn ">
-                    <i class="fa-solid fa-user-shield"></i>
-                    <span>Soy cliente</span>
-                </button>
-                <button class="user-access-btn ">
-                    <i class="fa-solid fa-door-open"></i>
-                    <span>Abri cuenta</span>
-                </button>
+                <a style="text-decoration: none;"
+                    href="https://api.whatsapp.com/send/?phone=5491161000284&text=Hola%20Binv%20Capital%20ya%20tengo%20una%20cuenta%20con%20{completar%20con%20cual%20de%20nuestros%20aliados%20estrategicos%20tiene%20su%20cuenta}%20.%20Gracias%20nos%20comunicamos%20en%20breve%20.&type=phone_number&app_absent=0">
+                    <button class="user-access-btn ">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <span>Soy cliente</span>
+                    </button>
+                </a>
+                <a style="text-decoration: none;" href="aperturadecuenta.html">
+                    <button class="user-access-btn ">
+                        <i class="fa-solid fa-door-open"></i>
+                        <span>Abrir cuenta</span>
+                    </button>
+                </a>
                 <button class="user-access-btn ">
                     <i class="fa-solid fa-question"></i>
                     <span>FAQ</span>
@@ -83,10 +100,6 @@
             </div>
         </section>
 
-
-
-
-
         <section class="inicio">
             <div class="textos">
 
@@ -94,26 +107,28 @@
                     <h5 id="t-slider"></h5>
                 </div>
                 <div class="spech">
-                    <h2>Nuestros aliados</h2>
-                    <p id="parrafo-compplementario">Con el firme propósito de proporcionarte las soluciones financieras
-                        más efectivas, estamos comprometidos en forjar
-                        alianzas estratégicas con las instituciones financieras líderes a nivel nacional e
-                        internacional.
+                    <h2>¿Necesitas impulsar tu PyME?</h2>
+                    <p id="parrafo-compplementario">¡Integra Pymes tiene la solución financiera que estás buscando!
+                        <br><br>
+                        No importa en qué sector te desarrolles, te ayudamos a conseguir el capital que necesitas para
+                        crecer.
                     </p>
                 </div>
 
             </div>
             <div class="butns">
-                <button class="normal transparent">
-                    <i id="abrir-cuenta-icon" class=" fa solid fa-up-right-from-square"></i>
-                    Abrir cuenta
+                <a href="precalificacion-crediticia.html">
+                    <button class="normal transparent">
+                        <i id="abrir-cuenta-icon" class=" fa solid fa-up-right-from-square"></i>
+                        Precalificación
+                    </button>
+                </a>
+                <a target="_blank" href="https://aperturaempresas.cohen.com.ar/">
+                    <button class="normal bg-primary">
+                        <i class="fa-solid fa-house-laptop"></i>
 
-
-                </button>
-                <button class="normal bg-primary">
-                    <i class="fa-solid fa-house-laptop"></i>
-
-                    Tengo cuenta</button>
+                        Abrir cuenta juridica</button>
+                </a>
             </div>
 
         </section>
@@ -147,20 +162,15 @@
 quienes somos? -->
     <section class="quienes-somos">
         <div class="texto-quienes-somos">
-            <h1> <span>"</span> Más de 4 años al servicio de la gente <span>"</span> </h1>
+            <h1> <span></span> Línea de financiamiento <span></span>
         </div>
         <div id="cards" class="cards">
-            <div id="leer-mas-sobre-mision" class="card contenedor-cohen">
+            <div id="leer-mas-sobre-mision" class="card contenedor-mision">
                 <div id="itemUno" class=" item mision">
                     <div class="title tittle-mision">
-                        <h2 class="misionTittle">ALyC Nº 21/CNV</h2>
-                        <p id="misionPartUno">"Ofrecemos una amplia variedad de instrumentos de inversión, que abarcan
-                            desde los conceptos más fundamentales hasta
-                            estrategias avanzadas como los derivados financieros. Además, proporcionamos acceso al
-                            mercado a través de un sistema de
-                            Acceso Directo al Mercado (DMA, por sus siglas en inglés), lo que le permite operar de
-                            manera eficiente y directa en los
-                            mercados financieros."
+                        <h2 class="misionTittle">Capital de trabajo</h2>
+                        <p id="misionPartUno">Obtén liquidez para cubrir tus gastos operativos y mantener tu negocio en
+                            marcha.
                             <span id="mision-completar"></span>
 
                         </p>
@@ -168,12 +178,11 @@ quienes somos? -->
                 </div>
 
             </div>
-            <div id="leer-mas-sobre-vision" class="card contenedor-inviu">
+            <div id="leer-mas-sobre-vision" class="card contenedor-vision">
                 <div id="itemDos" class=" item mision">
                     <div class="title">
-                        <h2>AlyC Nº 205/CNV</h2>
-                        <p>"Nos esforzamos por ser el faro financiero que ilumina el camino hacia la seguridad y el
-                            éxito."
+                        <h2>Inversión</h2>
+                        <p>Financia tus proyectos de expansión, compra de maquinaria o desarrollo de nuevos productos.
 
 
                             <span id="vision-completar"></span>
@@ -183,12 +192,11 @@ quienes somos? -->
                 </div>
 
             </div>
-            <div id="leer-mas-sobre-nosotros" class="card contenedor-iol">
+            <div id="leer-mas-sobre-nosotros" class="card contenedor-nosotros">
                 <div id="itemTres" class=" item nosotros">
                     <div class="title">
-                        <h2>ALyCP Nº 273/CNV</h2>
-                        <p>Somos un equipo con estudios de economía e ingeniería informática dedicados a brindar
-                            servicios de asesoramiento financiero.
+                        <h2>Consolidación de deudas</h2>
+                        <p>implifica tus pagos y reduce tus costos financieros.
 
                             <span id="nosotros-completar"></span>
 
@@ -501,9 +509,14 @@ quienes somos? -->
         <div class="info-contacto-form">
             <h2>Contactanos</h2>
             <h4>Telefono</h4>
-            <p>1121148340</p>
-            <h4>Email</h4>
-            <p>contacto@brantoinversiones.com.ar</p>
+            <p>Clientes: 1161000284</p>
+            <h4>Emails</h4>
+            <p><strong>Clientes: </strong></strong>clientes@binv.capital</p>
+            <p><strong>Apertura de cuenta: </strong></strong>apertura@binv.capital</p>
+            <p><strong>Financiamiento: </strong></strong>financiamiento@binv.capital</p>
+            <p><strong>Inversiones: </strong></strong>inversiones@binv.capital</p>
+            <p><strong>Empleos: </strong></strong>empleos@binv.capital</p>
+            <p><strong>Agentes Productores: </strong></strong>productores@binv.capital</p>
         </div>
         <form action="">
 
@@ -528,8 +541,8 @@ quienes somos? -->
     </section>
     <!-- Contacto -->
     <div class="icono-flotante-whatsapp">
-        <a href="https://wa.me/message/LG5EA5GUS7VHL1" target="_blank" class="whatsapp-button"
-            data-text="Hola, quiero saber mas sobre sus servicios.">
+        <a href="https://api.whatsapp.com/send/?phone=5491161000284&text=Hola%20Binv%20Capital%20me%20gustaria%20hacer%20una%20consulta.&type=phone_number&app_absent=0"
+            target="_blank" class="whatsapp-button" data-text="Hola, quiero saber mas sobre sus servicios.">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
